@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --cor00: #FFFFFF;
+    --cor01: #ECEEF1;
+    --cor02: #DFE9F4;
+    --cor03: #C2C6CA;
+    --cor04: #054C73;
+    --cor05: #03344F;
+    --cor06: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.header-furniture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    height: 100px;
+}
+
+nav>h1{
+    display: inline-block;
+    padding: 30px;
+    margin-right: 500px;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--cor04);
+}
+
+nav>a{
+    display: inline-block;
+    padding: 30px;
+    font-size: 13px;
+    color: var(--cor06);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.discover{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.discover>img{
+    width: 100%;
+}
+
+.div-discover{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 400px;
+    padding: 40px;
+    margin-right: 50px;
+    border-radius: 20px;
+    background-color: var(--cor02);
+}
+
+.div-discover>h3{
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--cor06);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div-discover>h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--cor04);
+}
+
+.div-discover>p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--cor06);
+}
+
+.btn{
+    width: 180px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    border: var(--cor04);
+    border-radius: 50px;
+    color: var(--cor00);
+    background-color: var(--cor04);
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor01);
+}
+
+.delivery, .support, .authentic{
+    display: inline-flex;
+    padding: 0px 50px 20px 50px;
+}
+
+.delivery>img{
+    width: 80px;
+    height: 80px;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.support>img{
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.authentic>img{
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.collection{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.collection>h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--cor06);
+}
+
+.collection>p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: var(--cor06);
+}
+
+.imagens-collection{
+    display: flex;
+    justify-content: center;
+}
+
+.imagens-collection>img{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.imagens-collection>.collection-1, .collection-3{
+    margin-top: 50px;
+}
+
+.collection-1{
+    border-radius: 50px 0px 0px 0px;
+}
+
+.collection-3{
+    border-radius: 0px 0px 50px 0px;
+}
+
+.beautify{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--cor01);
+}
+
+.beautify-text{
+    display: inline-block;
+    width: 450px;
+    font-size: 18px;
+    line-height: 38px;
+    margin-right: 500px;
+}
+
+.woman{
+    position: relative;
+    max-width: 20%;
+    margin-top: 45px;
+    margin-left: 870px;
+    border-radius: 40px 10px 40px 10px;
+}
+
+.circle{
+    position: absolute;
+    max-width: 15%;
+    margin-top: 150px;
+    margin-left: 980px;
+}
+
+.browse{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.browse>h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--cor06);
+}
+
+.browse>p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: var(--cor06);
+}
+
+.imagens-browse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagens-browse>div{
+    padding: 20px;
+}
+
+.imagens-browse>div>p{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.join{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--cor01);
+}
+
+.join>h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--cor06);
+}
+
+.join>p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--cor06);
+}
+
+.join>.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join>.email>input{
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 1px solid var(--cor04);
+    border-radius: 5px 0px 0px 5px;
+    color: var(--cor06); 
+    background-color: var(--cor00);
+}
+
+.join>.email>button{
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid var(--cor04);
+    border-radius: 0px 5px 5px 0px;
+    color: var(--cor00);
+    background-color: var(--cor04);
+}
+
+.beauty{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    color: var(--cor00);
+    background-color: var(--cor05);
+}
+
+.beauty-text{    
+    width: 400px;
+    line-height: 35px;
+    margin-left: 80px;
+}
+
+.instagram>h2{
+    margin-bottom: 15px;
+}
+
+.instagram>img{
+    padding: 10px;
+}
