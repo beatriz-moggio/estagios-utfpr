@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+
+:root{
+    --cor00: #ffffff;
+    --cor01: #575757;
+    --cor02: #c6e2ff;
+    --cor03: #0069D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main{
+    padding-bottom: 40px;
+    background-color: var(--cor02);
+}
+
+header, footer{
+    color: var(--cor00);
+    background-color: var(--cor01);
+}
+
+.card{
+    width: 600px;
+    margin-top: 20px;
+}
+
+.p-contato{
+    font-size: 40px;
+    color: var(--cor03);
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
