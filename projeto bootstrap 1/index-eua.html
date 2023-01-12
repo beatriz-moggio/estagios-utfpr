@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./recursos/imagens/favicon-eua.png" type="image/x-icon">
+  <title>Pontos Turísticos Brasileiros</title>
+
+  <link rel="stylesheet" href="recursos/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+    integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- nav de BOOTSTRAP -->
+  <header>
+    <div class="pos-f-t">
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <p>PONTOS TURÍSTICOS</p>
+
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </nav>
+
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <a class="navbar-brand" href="index-br.html">BRASIL</a>
+          <a class="navbar-brand" href="#">ESTADOS UNIDOS</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- carousel de BOOTSTRAP -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="recursos/imagens/eua/estatua-liberdade.png">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Estátua da Liberdade - Nova Iorque, NY</h5>
+            <p>A estátua de 93m foi declarada pela Unesco como Patrimônio Mundial, em 1984, um ícone que simboliza a
+              liberdade, a democracia e a esperança do povo estadunidense.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./recursos/imagens/eua/central-park.png">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Central Park - Nova Iorque, NY</h5>
+            <p>Inspirado em parques e praças públicas da Europa, a ideia era criar um espaço verde para que os
+              trabalhadores pudessem passar o tempo livre na companhia da família.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./recursos/imagens/eua/pier-santa-monica.png">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Piér de Santa Mônica - Santa Mônica, CA</h5>
+            <p>Um marco com mais de 100 anos de existência, sendo muito popular entre os residentes e visitantes. O piér
+              conta com diversas atrações, como restaurantes, parque de diversões, etc.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./recursos/imagens/eua/walt-disney-world.png">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Walt Disney World - Orlando, FL,0</h5>
+            <p>Inaugurada em 1971 por Walt Disney, Walt Disney World conta com diversos parques temáticos, transformando
+              a
+              região em um dos maiores pontos turíticos do mundo.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./recursos/imagens/eua/times-square.png">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Times Square - Nova Iorque, NY</h5>
+            <p>Com milhares de luzes e enormes painéis publicitários p centro crucial da região é a praça, dada pelo
+              cruzamento da Broadway com a 7ª avenida.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./recursos/imagens/eua/cataratas-niagara.png">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cataratas do Niágara - Niagara Falls, NY</h5>
+            <p>As cataratas ficam no rio que lhes deu nome, na fronteira entre o estado de Nova Iorque e a província de
+              Ontário. Apesar de o rio ter apenas 40km de extensão, forma diversas quedas d'água.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./recursos/imagens/eua/letreiro-hollywood.png">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Letreiro de Hollywood - Los Angeles, CA</h5>
+            <p>O letreiro foi erguido para vender casas de um condomínio. A ideia era que ele ficasse lá por um ano e
+              meio, mas acabou se tornando símbolo da cidade.</p>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+    crossorigin="anonymous"></script>
+
+  <footer class="fixed-bottom">
+    <div class="text-center text-white p-3">
+      Sem informações de contato no momento.
+    </div>
+  </footer>
+</body>
+
+</html>
