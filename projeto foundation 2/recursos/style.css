@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@600&display=swap');
+
+:root {
+    --cor00: #ffffff;
+    --cor01: #FF6700;
+    --cor02: #FADA8B;
+    --cor03: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.top-bar{
+    background-color: var(--cor02);
+}
+
+.menu>li>a{
+    width: 170px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor01);
+    background-color: var(--cor02);
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.menu>li>a:hover{
+    color: var(--cor00);
+    background-color: var(--cor01);
+}
+
+.lancamentos>h3{
+    font-weight: bold;
+    letter-spacing: 15px;
+    color: var(--cor01);
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.produtos{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.produtos>.avon{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 2px;
+}
+
+.produtos>p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.produtos>h4{
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor01);
+}
+
+.button{
+    width: 200px;
+    border-radius: 10px;
+    color: var(--cor01);
+    border: 1px solid var(--cor01);
+    background-color: var(--cor00);
+}
+
+.button:hover{
+    color: var(--cor00);
+    background-color: var(--cor01);
+}
+
+.button:focus{
+    color: var(--cor00);
+    background-color: var(--cor01);
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px 20px 50px;
+    background-image: linear-gradient(to right, #FF6700 , #FADA8B);
+}
+
+.cadastro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 600px;
+    color: var(--cor00);
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.cadastro-text>h4{
+    font-weight: bold;
+}
+
+.nome-email{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.input{
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.button{
+    width: 200px;
+    color: var(--cor00);
+    background-color: var(--cor01);
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--cor00);
+    background-color: var(--cor03);
+}
