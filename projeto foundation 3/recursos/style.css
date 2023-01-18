@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --cor00: #ffffff;
+    --cor01: #FF6700;
+    --cor02: #005D1A;
+    --cor03: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    border-bottom: 1px groove;
+}
+
+.top-bar{
+    width: 100%;
+    padding: 15px;
+}
+
+.menu>.logo{
+    width: 50%;
+}
+
+.button{
+    font-size: 13px;
+    background-color: var(--cor02) !important;
+}
+
+.vertical>li>a{
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--cor02);
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.vertical>li>.uso{
+    color: var(--cor00);
+    background-color: var(--cor02);
+}
+
+.off-canvas-content{
+    padding: 20px;
+}
+
+.off-canvas-content>.row>.column>img{
+    border: none;
+}
+
+.contato>p{
+    text-align: justify;
+}
+

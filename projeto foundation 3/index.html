@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>photobox</title>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="./recursos/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <img class="logo" src="./recursos/imagens/logo.png">
+        </ul>
+      </div>
+  
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Pesquisar"></li>
+          <li><button type="button" class="button">Pesquisar</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+        <!--  BARRA LATERAL  -->
+        <div class="off-canvas position-left reveal-for-large" id="my-info" data-anchor="foo" data-off-canvas data-position="left">
+          <div class="row column"><br>
+            <ul class="vertical menu">
+              <li><a href="#">TODOS OS ARQUIVOS</a></li>
+              <li><a href="#" class="uso">FOTOS</a></li>
+              <li><a href="#">COMPARTILHADOS</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!--  CONTEÚDO  -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="row medium-up-3">
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/1.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/2.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/3.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/4.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/5.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/6.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/7.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/8.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/9.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/10.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/11.jpg">
+            </div>
+            
+            <div class="column">
+              <img class="thumbnail" src="./recursos/imagens/12.jpg">
+            </div>
+          </div>
+          
+          <hr>
+
+
+          <!--  FOOTER  -->
+          <div class="row">
+            <div class="medium-6 columns contato">
+              <h3>Contate-me</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ipsam minima, quis vel magni adipisci voluptatem porro sed repudiandae consequatur animi sapiente temporibus quisquam molestiae dolore qui at earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus nemo provident mollitia impedit unde assumenda quasi ipsam velit corrupti.</p>
+            </div>
+
+            <div class="medium-6 columns">
+              <form data-abide novalidate>
+                <input class="input" type="text" required pattern="nome" placeholder="Nome">
+                <input class="input" type="text" required pattern="email" placeholder="E-mail">
+                <textarea class="input" placeholder="Digite sua mensagem aqui"></textarea>
+                <button class="button expanded" type="submit" value="Submit">Enviar</button>
+              </form>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
