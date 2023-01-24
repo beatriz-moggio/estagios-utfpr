@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500&display=swap');
+
+:root{
+    --cor00: #ffffff;
+    --cor01: #b6b6b6;
+    --cor02: #43485c;
+    --cor03: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar-item {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-menu>a:hover {
+    color: var(--cor03);
+    text-decoration: underline;
+}
+
+.sobre-mim{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.servicos{
+    padding: 40px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    color: var(--cor00);
+    background-color: var(--cor02);
+}
+
+.habilidades{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+form>button{
+    margin-left: 150px;
+}
