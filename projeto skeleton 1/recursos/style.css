@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --cor00: #FFFFFF;
+    --cor01: #22a510;
+    --cor012: #9ff394;
+    --cor02: #1d5add;
+    --cor022: #bfcff3;
+    --cor03: #db3f3f;
+    --cor032: #e9adad;
+    --cor04: #2e2e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--cor04);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-menu {
+    display: flex;
+    align-self: center;
+}
+
+.links{
+    margin-top: 15px;
+}
+
+.navbar-menu>a {
+    padding: 50px;
+    font-size: 14px;
+    color: var(--cor00);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-menu>a:hover {
+    font-size: 16px;
+    color: var(--cor00);
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px 100px 0px 100px;
+}
+
+main>h5 {
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+table {
+    font-size: 15px;
+    border-collapse: collapse;
+}
+
+tr>th,
+tr>td {
+    max-width: 50px;
+    text-align: center;
+}
+
+tr:hover {
+    font-size: 16px;
+}
+
+.basico {
+    font-weight: bold;
+    background-color: var(--cor01);
+}
+
+.basico-inf {
+    background-color: var(--cor012);
+}
+
+.padrao {
+    font-weight: bold;
+    background-color: var(--cor02);
+}
+
+.padrao-inf {
+    background-color: var(--cor022);
+}
+
+.avancado {
+    font-weight: bold;
+    background-color: var(--cor03);
+}
+
+.avancado-inf {
+    background-color: var(--cor032);
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--cor00);
+    background-color: var(--cor04);
+    font-family: 'Poppins', sans-serif;
+}
