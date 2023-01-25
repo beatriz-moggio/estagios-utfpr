@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --cor00: #FFFFFF;
+    --cor01: #11DFC7;
+    --cor02: #1271c9;
+    --cor03: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-menu {
+    display: flex;
+    align-self: center;
+}
+
+.navbar-menu>a {
+    padding: 50px;
+    font-size: 14px;
+    color: var(--cor03);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-menu>a:hover {
+    font-size: 16px;
+    color: var(--cor03);
+    text-decoration: underline;
+}
+
+.inicio{
+    text-align: center;
+    margin: 120px 150px 0px 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.familia {
+    position: relative;
+    max-width: 100%;
+    margin-top: -60px;
+    border-radius: 10px;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+    padding: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--cor00);
+    padding-bottom: 5rem;
+    background-size: cover;
+    background-image: url('./imagens/fundo.jpg');
+}
+
+.titulo-informacoes {
+    font-size: 25px;
+    color: var(--cor01);
+}
+
+.descricao-informacoes {
+    opacity: 0.8;
+    margin-top: -10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 200px;
+    color: var(--cor00);
+}
+
+.contatos{
+    width: 500px;
+    margin: 50px 0px 0px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contatos>div{
+    color: var(--cor03);
+}
+
+.contatos>div>p{
+    margin-bottom: 0px;
+}
+
+.contatos>div>h5{
+    opacity: 0.6;
+}
+
+.redes-sociais{
+    width: 500px;
+    margin: 20px 0px 0px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.redes-sociais>a>img{
+    width: 20%;
+    padding: 30px;
+}
+
+.redes-sociais>a>img:hover{
+    width: 22%;
+}
