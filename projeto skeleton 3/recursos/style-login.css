@@ -1,0 +1,41 @@
+:root {
+    --cor00: #FFFFFF;
+    --cor01: #1271c9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor01);
+}
+
+.geral{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--cor00);
+    transform: translate(500px, 15%);
+}
+
+img{
+    width: 50%;
+}
+
+p{
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+input{
+    font-size: 18px;
+    padding: 5px;
+}
