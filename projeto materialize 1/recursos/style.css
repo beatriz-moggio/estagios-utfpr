@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+:root {
+    --cor00: #ffffff;
+    --cor01: #f1f1f1;
+    --cor02: #dfdfdf;
+    --cor03: #838383;
+    --cor07: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor00);
+}
+
+nav>.left>img{
+    width: 30%;
+    padding: 10px;
+}
+
+nav>.right {
+    display: flex;
+    align-self: center;
+}
+
+nav>.right>a {
+    padding: 50px;
+    font-size: 14px;
+    color: var(--cor07);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav>.right>a:hover {
+    font-size: 16px;
+    color: var(--cor07);
+    text-decoration: underline;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background: url("./imagens/banner.jpg") fixed;
+}
+
+.conteudo-banner {
+    letter-spacing: 5px;
+    color: var(--cor00);
+    font-family: 'Poppins';
+    margin: 200px 0px 0px 350px;
+}
+
+.conteudo-banner>h4 {
+    font-weight: bold;
+    text-shadow: 3px 3px var(--cor07);
+}
+
+.conteudo-banner>p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor07);
+    text-shadow: 1px 1px var(--cor00);
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 50px 50px 50px;
+}
+
+.conteudo-caracteristicas {
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+}
+
+.material-icons {
+    font-size: 40px;
+}
+
+.icon-block>h5 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.novidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px 100px 30px 100px;
+}
+
+.titulo-novidades{
+    padding: 10px;
+    letter-spacing: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagens-novidades{
+    padding: 10px;
+}
+
+.imagens-novidades>img{
+    width: 100%;
+}
+
+.imagens-novidades>p{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
