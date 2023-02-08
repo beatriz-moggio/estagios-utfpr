@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --cor00: #ffffff;
+    --cor01: #fdfdfd;
+    --cor02: #c2c2c2;
+    --cor03: #1f5499;
+    --cor04: #395169;
+    --cor07: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("./imagens/fundo.jpg");
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
+    padding: 5px 10px;
+    color: var(--cor03);
+    background-color: var(--cor01);
+    border: 2px solid var(--cor03);
+}
+
+button i{
+    font-weight: bold;
+    color: var(--cor03);
+    pointer-events: none;
+}
+
+button:hover{
+    background-color: var(--cor03);
+}
+
+button:hover i{
+    color: var(--cor01);
+}
+
+.btn-edit-cancel{
+    width: 100px;
+    color: var(--cor03);
+    background-color: var(--cor00);
+}
+
+.btn-edit-cancel:hover{
+    color: var(--cor00);
+    background-color: var(--cor03);
+}
+
+input, select{
+    padding: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    padding: 20px;  
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 50px auto;
+    background-color: var(--cor01);
+}
+
+.container header{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--cor02);
+}
+
+.formulario, .edit-formulario{
+    padding: 15px;
+    border-bottom: 1px solid var(--cor02);
+}
+
+.formulario h4, .edit-formulario h4{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.controle-formulario{
+    display: flex;
+}
+
+.controle-formulario input{
+    margin-right: 5px;
+}
+
+.btn-edit-cancel{
+    margin-top: 10px;
+}
+
+.ferramentas{
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid var(--cor02);
+}
+
+.ferramentas div h4{
+    margin-bottom: 10px;
+}
+
+.pesquisar{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid var(--cor02);
+}
+
+.pesquisar form{
+    display: flex;
+}
+
+.pesquisar form input{
+    width: 100%;
+    margin-right: 5px;
+}
+
+.filtro{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.filtro select{
+    flex: 1;
+}
+
+.tarefas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+    transition: 0.3s;
+    border: 1px solid var(--cor02);
+}
+
+.tarefas h3{
+    flex: 1;
+    font-size: 15px;
+}
+
+.tarefas button{
+    margin-left: 5px;
+}
+
+.done{
+    background-color: var(--cor04);
+}
+
+.done h3{
+    font-style: italic;
+    color: var(--cor00);
+    text-decoration: line-through;
+}

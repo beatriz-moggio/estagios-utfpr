@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+
+        <form class="formulario">
+            <h4>Adicione a sua tarefa:</h4>
+            <div class="controle-formulario">
+                <input type="text" class="new-input" placeholder="o que você vai fazer?">
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <form class="edit-formulario hide">
+            <h4>Edite a sua tarefa:</h4>
+            <div class="controle-formulario">
+                <input type="text" class="edit-input" placeholder="o que você vai fazer?">
+                <button type="submit">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+
+            <button class="btn-edit-cancel">cancelar</button>
+        </form>
+
+        <div class="ferramentas">
+            <div class="pesquisar">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" class="buscar-input" placeholder="buscar">
+                    <button class="btn-apagar">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="filtro">
+                <h4>Filtrar:</h4>
+                <select class="select-filtro">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="list-tarefas"></div>
+    </div>
+
+    <script src="./recursos/javascript.js"></script>
+</body>
+</html>
