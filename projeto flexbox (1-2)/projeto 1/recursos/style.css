@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+
+:root{
+    --cor00: #ffffff;
+    --cor01: #d3d3d3;
+    --cor02: #ffff00;
+    --cor03: #ce2127;
+    --cor04: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor00);
+}
+
+/* ---- HEADER (cabeçalho da página) ---- */
+header{ 
+    height: 100px;
+    border-bottom: 1px solid var(--cor01);
+}
+
+header>div{
+    display: flex;
+}
+
+header>div>.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 170px;
+    padding: 30px;
+}
+
+header>div>.logo>img{
+    width: 50%;
+}
+
+header>div>.topicos{
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+}
+
+header>div>.topicos>nav>a{
+    font-family: 'Bebas Neue', cursive;
+    color: var(--cor04);
+    font-size: 18px;
+    padding: 35px;
+    margin-top: 10px;
+}
+
+header>div>.topicos>nav>.em-uso{
+    color: var(--cor03);
+}
+
+/* ---- MAIN (conteúdo da página) ---- */
+main{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+
+main>.galeria>.recomendacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>.galeria>.recomendacoes>img{
+    width: 23%;
+    margin: 13px;
+}
+
+main>.galeria>.receita-goiabada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>.galeria>.receita-goiabada>.goiabada{
+    width: 35%;
+    margin: 13px 13px 13px 0px;
+}
+
+main>.galeria>.receita-goiabada>.seta-receita{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+main>.galeria>.receita-goiabada>.seta-receita>.seta{
+    width: 30%;
+    margin: 20px 10px 10px 30px;
+}
+
+main>.galeria>.receita-goiabada>.seta-receita>.receitas{
+    font-size: 10px;
+    color: var(--cor04);
+    font-weight: bold;
+    line-height: 30px;
+    margin: 25px 0px 25px 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main>.galeria>.receita-goiabada>.pinduquinha{
+    width: 15%;
+    margin-left: 130px;
+}
+
+main>.galeria>.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>.galeria>.layout>.familia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 210px;
+}
+
+main>.galeria>.layout>.familia>img{
+    width: 55%;
+    margin: 13px 13px 13px 0px;
+}
+
+main>.galeria>.layout>.produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>.galeria>.layout>.produtos>img{
+    width: 40%;
+}
+
+main>.galeria>.ano>img{
+    width: 100%;
+    margin: 13px 13px 13px 0px;
+}
+
+
+/* ---- FOOTER (rodapé da página) ---- */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    height: 250px;
+    color: var(--cor00);
+    background-color: var(--cor03);
+}
+
+footer>.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 1200px;
+    margin: 20px;
+    margin-left: 200px;
+}
+
+footer>.contatos>div{
+    color: var(--cor00);
+}
+
+footer>.contatos>div>p{
+    font-size: 14px;
+    color: var(--cor02);
+}
+
+footer>.contatos>div>.conteudo{
+    font-size: 25px;
+    color: var(--cor00);
+}
+
+footer>.redes-sociais{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin-left: 350px;
+}
+
+footer>.redes-sociais>div>a{
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+}
+
+footer>.redes-sociais>div>a>img{
+    width: 15%;
+    margin: 20px;
+}
+
+footer>.redes-sociais>div>a>img:hover{
+	width: 17%;
+}
