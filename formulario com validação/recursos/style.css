@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --cor00: #ffffff;
+    --cor02: #c2c2c2;
+    --cor03: #2e2e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+body{
+    padding: 15px;
+    background-size: cover;
+    background-image: url("./imagens/fundo.png");
+}
+
+.formulario{
+    width: 600px;
+    opacity: 0.9;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--cor00);
+}
+
+h1{
+    margin: 10px;
+    text-align: center;
+}
+
+form{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--cor02);
+}
+
+textarea{
+    height: 80px;
+    resize: none;
+    overflow-y: scroll;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    color: var(--cor00);
+    background-color: var(--cor03);
+}
