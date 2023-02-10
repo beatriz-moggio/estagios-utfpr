@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --cor00: #ffffff;
+    --cor01: #a591ff;
+    --cor02: #5134d3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("./imagens/fundo.jpg");
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    color: var(--cor00);
+    border-radius: 15px;
+    background-color: var(--cor02);
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+}
+
+.form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-input {
+    display: flex;
+}
+
+.form-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.form-input button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 50px;
+    margin-left: 8px;
+    color: var(--cor00);
+    border-radius: 5px;
+    background-color: var(--cor01);
+}
+
+.weather-data {
+    margin-top: 25px;
+    padding-top: 25px;
+    text-align: center;
+    border-top: 1px solid var(--cor00);
+}
+
+.weather-data h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.weather-data h2 i {
+    font-size: 15px;
+}
+
+.weather-data span {
+    margin: 10px;
+}
+
+.weather-data .temperature{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.country {
+    height: 15px;
+}
+
+.description-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.description {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-container .humidity {
+    margin: 10px;
+    padding: 10px;
+    border-right: 1px solid var(--cor00);
+}
