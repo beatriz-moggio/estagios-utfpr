@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+
+:root {
+    --cor00: #ffffff;
+    --cor01: #ebebeb;
+    --cor02: #d3d3d3;
+    --cor03: #bcbcbc;
+    --cor04: #868686;
+    --cor05: #CDDC39;
+    --cor06: #EBC634;
+    --cor07: #ce2127;
+    --cor08: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* --------------------- MEDIUM LARGE (1200px a 1560px) ---------------------*/
+@media (min-width: 1200px) and (max-width: 1559.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 100px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 5px;
+        width: 200px;
+        height: 45px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 20px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+    /* ------------------- BANNER ------------------- */
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 680px;
+        background: url("./img/banner/banner-medium-large.png") fixed;
+    }
+
+
+    /* -------------- CARROSSEL DE INFORMAÇÕES -------------- */
+    .carousel {
+        opacity: 1;
+        margin: auto;
+        height: 100%;
+        width: 1300px;
+        font-weight: 600;
+        padding: 50px 0px;
+        color: var(--cor08);
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .container-carousel {
+        margin: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-carousel {
+        width: 400px;
+        display: block;
+        padding-left: 50px;
+        text-align: justify;
+    }
+
+    .titulo {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: start;
+        margin-bottom: 30px;
+    }
+
+    .left-carousel img {
+        width: 500px;
+        height: 330px;
+        border-radius: 10px;
+    }
+
+    .btn-carousel {
+        font-size: 50px;
+    }
+
+
+    /* ------------------- SOCIALIZE ------------------- */
+    .socialize {
+        padding: 30px;
+        background: url("./img/textura.png") fixed;
+    }
+
+    .gallery-instagram {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .gallery-instagram .title-socialize {
+        padding: 5px;
+        font-size: 80px;
+        text-align: center;
+        color: var(--cor06);
+        letter-spacing: 10px;
+        text-shadow: 3px 3px var(--cor08);
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+
+    .gallery-instagram .row div {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+    }
+
+    .gallery-instagram .row div a img {
+        width: 100%;
+        margin: 20px 20px;
+        transition: transform 0.7s ease;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    }
+
+    .gallery-instagram .row div:hover a img {
+        transform: scale(1.05);
+    }
+
+    .gallery-instagram .row div a i {
+        top: 255px;
+        right: 5px;
+        opacity: 0.8;
+        padding: 5px;
+        font-size: 20px;
+        position: absolute;
+        border-radius: 100%;
+        color: var(--cor00);
+        border: 3px solid var(--cor00);
+        background-color: var(--cor04);
+    }
+
+    .gallery-instagram .row div:hover a i {
+        top: 119px;
+        right: 92px;
+        opacity: 0.8;
+        padding: 15px;
+        font-size: 45px;
+        position: absolute;
+        border-radius: 100%;
+        color: var(--cor00);
+        border: 3px solid var(--cor00);
+        background-color: var(--cor04);
+    }
+
+
+    /* ---- FOOTER (rodapé da página) ---- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 40px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 15px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px 20px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos, .inf-follow {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    footer .content-footer .inf .subtext {
+        margin: 10px 0px 0px;
+        color: var(--cor07);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
