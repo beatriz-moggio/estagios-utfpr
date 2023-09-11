@@ -24,6 +24,324 @@
     box-sizing: border-box;
 }
 
+
+/* --------------------- EXTRA LARGE (1560px a 1920px) ---------------------*/
+@media (min-width: 1559.99px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 100px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 5px;
+        width: 200px;
+        height: 45px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 20px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ---- POSTS (parecidos com instagram) ---- */
+    main .banner-about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 50px 50px 50px 120px;
+    }
+
+    main .banner-about-us p {
+        display: flex;
+        align-items: center;
+
+        font-size: 150px;
+        padding: 0px 180px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-about-us img {
+        width: 10%;
+    }
+
+    main .container-about-us {
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor01);
+    }
+
+    main .container-about-us .text-container {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-about-us .text-container p {
+        width: 500px;
+        margin: 0px;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    main .container {
+        padding: 40px 0px;
+    }
+
+    main .main-timeline {
+        position: relative;
+    }
+
+    main .main-timeline::after {
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        width: 3px;
+        content: "";
+        margin-left: -3px;
+        position: absolute;
+        background-color: var(--cor07);
+    }
+
+    main .container .title-container {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        padding-bottom: 30px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    main .main-timeline .timeline {
+        width: 50%;
+        position: relative;
+    }
+
+    main .main-timeline .timeline::after {
+        top: 180px;
+        content: "";
+        width: 30px;
+        height: 30px;
+        right: -14px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .left {
+        left: 0;
+        padding: 0px 40px 20px 0px;
+    }
+
+    main .main-timeline .right {
+        left: 50%;
+        padding: 0px 0px 20px 40px;
+    }
+
+    main .main-timeline .left::before,
+    .right::before {
+        content: " ";
+        position: absolute;
+    }
+
+    main .main-timeline .right::after {
+        left: -14px;
+    }
+
+    main .main-timeline .card-img-top {
+        padding: 15px;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .card-body {
+        margin: 5px 15px;
+    }
+
+    main .main-timeline .title-timeline {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .main-timeline .title-timeline h3 {
+        margin: 0px;
+        padding-top: 10px;
+        letter-spacing: 5px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .title-timeline p {
+        padding-top: 10px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .card-body .text-card {
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .representantes {
+        margin: 30px 0px 100px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .representantes .content-representantes {
+        width: 800px;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+        background-color: var(--cor05);
+    }
+
+    main .representantes .content-representantes a {
+        font-size: 18px;
+        color: var(--cor07);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 40px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 15px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px 20px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    footer .content-footer .inf .subtext {
+        margin: 10px 0px 0px;
+        color: var(--cor07);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
 /* --------------------- MEDIUM LARGE (1200px a 1560px) ---------------------*/
 @media (min-width: 1200px) and (max-width: 1559.98px) {
 
@@ -174,7 +492,8 @@
         padding: 0px 0px 20px 40px;
     }
 
-    main .main-timeline .left::before, .right::before {
+    main .main-timeline .left::before,
+    .right::before {
         content: " ";
         position: absolute;
     }
@@ -214,6 +533,7 @@
     }
 
     main .main-timeline .card-body .text-card {
+        text-align: justify;
         font-family: 'Raleway', sans-serif;
     }
 
@@ -240,7 +560,7 @@
     }
 
 
-    /* ---- FOOTER (rodapé da página) ---- */
+    /* ------------------- FOOTER ------------------- */
     footer {
         display: flex;
         flex-direction: column;
@@ -318,6 +638,1205 @@
 
     footer .content-footer .inf .inf-follow a {
         font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+/* --------------------- LARGE (992px a 1200px) ---------------------*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 100px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 150px;
+        height: 34px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 18px;
+        padding: 5px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ---- MAIN ---- */
+    main .banner-about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 50px 50px 50px 60px;
+    }
+
+    main .banner-about-us p {
+        display: flex;
+        align-items: center;
+
+        font-size: 150px;
+        padding: 0px 80px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-about-us img {
+        width: 10%;
+    }
+
+    main .container-about-us {
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor01);
+    }
+
+    main .container-about-us .text-container {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-about-us .text-container p {
+        width: 500px;
+        margin: 0px;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    main .container {
+        padding: 40px 0px;
+    }
+
+    main .main-timeline {
+        position: relative;
+    }
+
+    main .main-timeline::after {
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        width: 3px;
+        content: "";
+        margin-left: -3px;
+        position: absolute;
+        background-color: var(--cor07);
+    }
+
+    main .container .title-container {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        padding-bottom: 30px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    main .main-timeline .timeline {
+        width: 50%;
+        position: relative;
+    }
+
+    main .main-timeline .timeline::after {
+        top: 180px;
+        content: "";
+        width: 30px;
+        height: 30px;
+        right: -14px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .left {
+        left: 0;
+        padding: 0px 40px 20px 0px;
+    }
+
+    main .main-timeline .right {
+        left: 50%;
+        padding: 0px 0px 20px 40px;
+    }
+
+    main .main-timeline .left::before,
+    .right::before {
+        content: " ";
+        position: absolute;
+    }
+
+    main .main-timeline .right::after {
+        left: -14px;
+    }
+
+    main .main-timeline .card-img-top {
+        padding: 15px;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .card-body {
+        margin: 5px 15px;
+    }
+
+    main .main-timeline .title-timeline {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .main-timeline .title-timeline h3 {
+        margin: 0px;
+        padding-top: 10px;
+        letter-spacing: 5px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .title-timeline p {
+        padding-top: 10px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .card-body .text-card {
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .representantes {
+        margin: 30px 0px 100px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .representantes .content-representantes {
+        width: 800px;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+        background-color: var(--cor05);
+    }
+
+    main .representantes .content-representantes a {
+        font-size: 18px;
+        color: var(--cor07);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 40px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 15px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px 20px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    footer .content-footer .inf .subtext {
+        margin: 10px 0px 0px;
+        color: var(--cor07);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor06);
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 130px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 150px;
+        height: 34px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 18px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 50px 50px 50px 60px;
+    }
+
+    main .banner-about-us p {
+        display: flex;
+        align-items: center;
+
+        font-size: 100px;
+        padding: 0px 80px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-about-us img {
+        width: 10%;
+    }
+
+    main .container-about-us {
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor01);
+    }
+
+    main .container-about-us .text-container {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-about-us .text-container p {
+        width: 500px;
+        margin: 0px;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    main .container {
+        padding: 40px 0px;
+    }
+
+    main .main-timeline {
+        position: relative;
+    }
+
+    main .main-timeline::after {
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        width: 3px;
+        content: "";
+        margin-left: -3px;
+        position: absolute;
+        background-color: var(--cor07);
+    }
+
+    main .container .title-container {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        padding-bottom: 30px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    main .main-timeline .timeline {
+        width: 50%;
+        position: relative;
+    }
+
+    main .main-timeline .timeline::after {
+        top: 180px;
+        content: "";
+        width: 30px;
+        height: 30px;
+        right: -14px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .left {
+        left: 0;
+        padding: 0px 40px 20px 0px;
+    }
+
+    main .main-timeline .right {
+        left: 50%;
+        padding: 0px 0px 20px 40px;
+    }
+
+    main .main-timeline .left::before,
+    .right::before {
+        content: " ";
+        position: absolute;
+    }
+
+    main .main-timeline .right::after {
+        left: -14px;
+    }
+
+    main .main-timeline .card-img-top {
+        padding: 15px;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .card-body {
+        margin: 5px 15px;
+    }
+
+    main .main-timeline .title-timeline {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .main-timeline .title-timeline h3 {
+        margin: 0px;
+        padding-top: 10px;
+        letter-spacing: 5px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .title-timeline p {
+        padding-top: 10px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .card-body .text-card {
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .representantes {
+        margin: 30px 0px 100px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .representantes .content-representantes {
+        width: 600px;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+        background-color: var(--cor05);
+    }
+
+    main .representantes .content-representantes a {
+        font-size: 16px;
+        color: var(--cor07);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 40px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 15px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px 20px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    footer .content-footer .inf .subtext {
+        margin: 10px 0px 0px;
+        color: var(--cor07);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 130px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 150px;
+        height: 34px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 13px;
+        padding: 0px 8px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 50px 50px 50px 60px;
+    }
+
+    main .banner-about-us p {
+        display: flex;
+        align-items: center;
+
+        font-size: 80px;
+        padding: 0px 80px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-about-us img {
+        width: 10%;
+    }
+
+    main .container-about-us {
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor01);
+    }
+
+    main .container-about-us .text-container {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-about-us .text-container p {
+        width: 500px;
+        margin: 0px;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    main .container {
+        padding: 40px 0px;
+    }
+
+    main .main-timeline {
+        position: relative;
+    }
+
+    main .main-timeline::after {
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        width: 3px;
+        content: "";
+        margin-left: -3px;
+        position: absolute;
+        background-color: var(--cor07);
+    }
+
+    main .container .title-container {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        padding-bottom: 30px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    main .main-timeline .timeline {
+        width: 50%;
+        position: relative;
+    }
+
+    main .main-timeline .timeline::after {
+        top: 180px;
+        content: "";
+        width: 30px;
+        height: 30px;
+        right: -14px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .left {
+        left: 0;
+        padding: 0px 40px 20px 0px;
+    }
+
+    main .main-timeline .right {
+        left: 50%;
+        padding: 0px 0px 20px 40px;
+    }
+
+    main .main-timeline .left::before,
+    .right::before {
+        content: " ";
+        position: absolute;
+    }
+
+    main .main-timeline .right::after {
+        left: -14px;
+    }
+
+    main .main-timeline .card-img-top {
+        padding: 15px;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .card-body {
+        margin: 5px 15px;
+    }
+
+    main .main-timeline .title-timeline {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .main-timeline .title-timeline h3 {
+        margin: 0px;
+        font-size: 10px;
+        padding-top: 12px;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .title-timeline p {
+        font-size: 10px;
+        padding-top: 10px;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .card-body .text-card {
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .representantes {
+        margin: 30px 0px 100px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .representantes .content-representantes {
+        width: 400px;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+        background-color: var(--cor05);
+    }
+
+    main .representantes .content-representantes a {
+        font-size: 14px;
+        color: var(--cor07);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 20px 0px;
+        letter-spacing: 2px;
+        color: var(--cor08);
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 10px;
+        padding: 0px 5px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 0px 10px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 180px;
+        margin-right: 10px;
+    }
+
+    footer .content-footer .inf .subtext {
+        font-size: 10px;
+        color: var(--cor07);
+        margin: 10px 0px 0px;
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-size: 12px;
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 180px;
+        margin-left: 10px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 20px;
+        padding: 10px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 110px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 100px;
+        height: 23px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 6px;
+        padding: 0px 8px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px 20px 20px 30px;
+    }
+
+    main .banner-about-us p {
+        display: flex;
+        align-items: center;
+
+        font-size: 40px;
+        padding: 0px 30px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-about-us img {
+        width: 10%;
+    }
+
+    main .container-about-us {
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor01);
+    }
+
+    main .container-about-us .text-container {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-about-us .text-container p {
+        width: 200px;
+        margin: 0px;
+        font-size: 7px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    main .container {
+        padding: 40px 0px;
+    }
+
+    main .main-timeline {
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .main-timeline::before {
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        content: "";
+        margin-left: -3px;
+        position: absolute;
+        background-color: var(--cor07);
+    }
+
+    main .container .title-container {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        padding-bottom: 10px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    main .main-timeline .card {
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    main .main-timeline .card-img-top {
+        padding: 15px;
+        background-color: var(--cor07);
+    }
+
+    main .main-timeline .title-timeline {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .main-timeline .title-timeline h3 {
+        margin: 0px;
+        font-size: 12px;
+        padding-top: 8px;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .title-timeline p {
+        font-size: 12px;
+        padding-top: 6px;
+        letter-spacing: 2px;
+        color: var(--cor07);
+        font-family: 'Londrina Solid', cursive;
+    }
+
+    main .main-timeline .card-body .text-card {
+        font-size: 10px;
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .representantes {
+        margin: 30px 0px 100px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .representantes .content-representantes {
+        width: 200px;
+        height: 100%;
+        padding: 15px;
+        text-align: center;
+        background-color: var(--cor05);
+    }
+
+    main .representantes .content-representantes a {
+        font-size: 8px;
+        color: var(--cor07);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }    
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 30px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos {
+        display: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 180px;
+        margin-left: 10px;
+    }
+
+    footer .content-footer .inf .inf-follow .subtext{
+        text-align: center;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        padding: 13px;
+        font-size: 20px;
         color: var(--cor07);
         border-radius: 100%;
         transition: transform 0.7s ease;

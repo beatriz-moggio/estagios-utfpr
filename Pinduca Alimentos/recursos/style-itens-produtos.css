@@ -24,6 +24,236 @@
     box-sizing: border-box;
 }
 
+
+/* --------------------- EXTRA LARGE (1560px a 1920px) ---------------------*/
+@media (min-width: 1559.99px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 100px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 5px;
+        width: 200px;
+        height: 45px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 20px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .banner-products p {
+        display: flex;
+        align-items: center;
+
+        font-size: 100px;
+        padding: 0px 180px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-products img {
+        width: 30%;
+    }
+
+    main .breadcrumb-item, .breadcrumb-item a {
+        font-size: 12px;
+        color: var(--cor00);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .breadcrumb-item a:hover {
+        color: var(--cor08);
+    }
+
+    main .container-products {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 30px 100px;
+        background: url("../recursos/img/textura.png") fixed;
+    }
+
+    main .container-products .products {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-products .item-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .container-products .item-product img {
+        width: 300px;
+        padding: 15px;
+        transition: transform 0.7s ease;
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.75))
+    }
+
+    main .container-products .item-product img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1))
+    }
+
+    main .container-products .item-product p {
+        width: 250px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 40px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 15px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px 20px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    footer .content-footer .inf .subtext {
+        margin: 10px 0px 0px;
+        color: var(--cor07);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
 /* --------------------- MEDIUM LARGE (1200px a 1560px) ---------------------*/
 @media (min-width: 1200px) and (max-width: 1559.98px) {
 
@@ -154,7 +384,7 @@
     }
 
 
-    /* ---- FOOTER (rodapé da página) ---- */
+    /* ------------------- FOOTER ------------------- */
     footer {
         display: flex;
         flex-direction: column;
@@ -204,7 +434,8 @@
         padding: 30px 0px 20px 0px;
     }
 
-    footer .content-footer .inf .inf-contatos, .inf-follow {
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
         width: 300px;
         margin-right: 20px;
     }
@@ -237,6 +468,895 @@
 
     footer .content-footer .inf .inf-follow a {
         font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+/* --------------------- LARGE (992px a 1200px) ---------------------*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 100px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 150px;
+        height: 34px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 18px;
+        padding: 5px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .banner-products p {
+        display: flex;
+        align-items: center;
+
+        font-size: 80px;
+        padding: 0px 180px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-products img {
+        width: 30%;
+    }
+
+    main .breadcrumb-item, .breadcrumb-item a {
+        font-size: 12px;
+        color: var(--cor00);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .breadcrumb-item a:hover {
+        color: var(--cor08);
+    }
+
+    main .container-products {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 30px 100px;
+        background: url("../recursos/img/textura.png") fixed;
+    }
+
+    main .container-products .products {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-products .item-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .container-products .item-product img {
+        width: 250px;
+        padding: 15px;
+        transition: transform 0.7s ease;
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.75))
+    }
+
+    main .container-products .item-product img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1))
+    }
+
+    main .container-products .item-product p {
+        width: 250px;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 40px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 15px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px 20px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    footer .content-footer .inf .subtext {
+        margin: 10px 0px 0px;
+        color: var(--cor07);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+/* 🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗 */
+/* PROBLEMAS COM RESPONSIVIDADE DO HEADER */
+/* 🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗 */
+/* PROBLEMAS COM RESPONSIVIDADE DO HEADER */
+/* 🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗🠗 */
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 130px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 150px;
+        height: 34px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 18px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .banner-products p {
+        display: flex;
+        align-items: center;
+
+        font-size: 60px;
+        padding: 20px 120px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-products img {
+        width: 30%;
+    }
+
+    main .breadcrumb-item, .breadcrumb-item a {
+        font-size: 12px;
+        color: var(--cor00);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .breadcrumb-item a:hover {
+        color: var(--cor08);
+    }
+
+    main .container-products {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 30px 10px;
+        background: url("../recursos/img/textura.png") fixed;
+    }
+
+    main .container-products .products {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-products .item-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .container-products .item-product img {
+        width: 200px;
+        padding: 15px;
+        transition: transform 0.7s ease;
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.75))
+    }
+
+    main .container-products .item-product img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1))
+    }
+
+    main .container-products .item-product p {
+        width: 200px;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 40px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 15px;
+        padding: 0px 15px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px 20px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    footer .content-footer .inf .subtext {
+        margin: 10px 0px 0px;
+        color: var(--cor07);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 25px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 130px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 150px;
+        height: 34px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 13px;
+        padding: 0px 8px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .banner-products p {
+        display: flex;
+        align-items: center;
+
+        font-size: 60px;
+        padding: 20px 60px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-products img {
+        width: 40%;
+    }
+
+    main .breadcrumb-item, .breadcrumb-item a {
+        font-size: 12px;
+        color: var(--cor00);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .breadcrumb-item a:hover {
+        color: var(--cor08);
+    }
+
+    main .container-products {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 30px 10px;
+        background: url("../recursos/img/textura.png") fixed;
+    }
+
+    main .container-products .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-products .item-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .container-products .item-product img {
+        width: 300px;
+        padding: 15px;
+        transition: transform 0.7s ease;
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.75))
+    }
+
+    main .container-products .item-product img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1))
+    }
+
+    main .container-products .item-product p {
+        width: 200px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 20px 0px;
+        letter-spacing: 2px;
+        color: var(--cor08);
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer .content-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .item-nav {
+        font-size: 10px;
+        padding: 0px 5px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 0px 10px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos,
+    .inf-follow {
+        width: 180px;
+        margin-right: 10px;
+    }
+
+    footer .content-footer .inf .subtext {
+        font-size: 10px;
+        color: var(--cor07);
+        margin: 10px 0px 0px;
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-size: 12px;
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .content-subtext:hover {
+        color: var(--cor04);
+    }
+
+    footer .content-footer .inf .content-subtext {
+        font-weight: 100;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 180px;
+        margin-left: 10px;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        font-size: 20px;
+        padding: 10px;
+        color: var(--cor07);
+        border-radius: 100%;
+        transition: transform 0.7s ease;
+    }
+
+    footer .content-footer .inf .inf-follow a:hover {
+        border-radius: 100%;
+        color: var(--cor00);
+        transform: scale(1.05);
+        background-color: var(--cor07);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    /* ------------------- HEADER ------------------- */
+    header {
+        height: 130px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 15px;
+    }
+
+    header .header-container .logo-pinduca a img {
+        margin: 10px;
+        width: 150px;
+        height: 34px;
+    }
+
+    header .header-container nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .header-container nav .item-nav {
+        font-size: 13px;
+        padding: 0px 8px;
+        color: var(--cor08);
+        text-decoration: none;
+    }
+
+    header .header-container nav .item-nav:hover {
+        color: var(--cor07);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 4px;
+    }
+
+    header .header-container nav .active {
+        color: var(--cor07);
+    }
+
+
+    /* ------------------- MAIN ------------------- */
+    main .banner-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .banner-products p {
+        display: flex;
+        align-items: center;
+
+        font-size: 60px;
+        padding: 20px 0px 0px 0px;
+        -webkit-background-clip: text;
+        font-family: 'Londrina Solid', cursive;
+
+        color: transparent;
+        background-clip: text;
+        background-image: url("./img/textura.png");
+    }
+
+    main .banner-products img {
+        display: none;
+    }
+
+    main .breadcrumb-item, .breadcrumb-item a {
+        font-size: 12px;
+        color: var(--cor00);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main .breadcrumb-item a:hover {
+        color: var(--cor08);
+    }
+
+    main .container-products {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        padding: 30px 10px;
+        background: url("../recursos/img/textura.png") fixed;
+    }
+
+    main .container-products .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container-products .item-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .container-products .item-product img {
+        width: 250px;
+        padding: 15px;
+        transition: transform 0.7s ease;
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.75))
+    }
+
+    main .container-products .item-product img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 1))
+    }
+
+    main .container-products .item-product p {
+        width: 200px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    /* ------------------- FOOTER ------------------- */
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        letter-spacing: 2px;
+        color: var(--cor08);
+        padding: 30px 0px 0px 0px;
+        background-color: var(--cor00);
+        font-family: 'Bebas Neue', cursive;
+        border-top: 1px solid var(--cor02);
+        background: url("./img/textura2.png");
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    footer .content-footer .inf {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0px;
+    }
+
+    footer .content-footer .inf .inf-contatos {
+        display: none;
+    }
+
+    footer .content-footer .inf .inf-follow {
+        width: 180px;
+        margin-left: 10px;
+    }
+
+    footer .content-footer .inf .inf-follow .subtext {
+        text-align: center;
+    }
+
+    footer .content-footer .inf .inf-follow a {
+        padding: 13px;
+        font-size: 20px;
         color: var(--cor07);
         border-radius: 100%;
         transition: transform 0.7s ease;
